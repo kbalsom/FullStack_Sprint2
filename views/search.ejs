@@ -1,0 +1,12 @@
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body>
+		<!-- Since this page can only be accessed if the user is logged in, we display a Log Out button in our nav -->
+		<%- include('./partials/nav.ejs', {showLogOutButton: true}) %>
+		<div id="content">
+			<h1>Search MoviesDB</h1>
+			<%- include('./partials/searchform.ejs') %>
+		</div>
+	</body>
+	<%- include('./partials/foot.ejs') %>
+</html>

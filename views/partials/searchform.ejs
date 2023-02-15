@@ -1,0 +1,17 @@
+<div id="search-form">
+	<form action="/search" method="GET">
+		<input
+			type="text"
+			name="searchTerm"
+			placeholder="&#x1F50D; Title, Year, Genre, Company..."
+			pattern="^[ ,a-zA-Z1234567890]+$"
+			title="No special characters"
+			required
+		/>
+		<select name="database" id="database">
+			<option value="mongodb">MongoDB</option>
+			<option value="postgresql">PostgreSQL</option>
+		</select>
+		<input type="submit" value="Search" />
+	</form>
+</div>

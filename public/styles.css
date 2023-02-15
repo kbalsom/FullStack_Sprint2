@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+
+/* ********************************* General ******************************** */
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: "Open Sans", sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+a:hover {
+	color: black;
+}
+
+h1 {
+	margin: 0;
+}
+
+footer {
+	background-color: black;
+	bottom: 0;
+	color: white;
+	font-size: small;
+	position: fixed;
+	width: 100%;
+}
+
+/* ****************************** Shared Style ****************************** */
+#content {
+	margin: 8% auto;
+	max-width: 700px;
+	min-width: 240px;
+}
+#content h1 {
+	margin-bottom: 40px;
+}
+#content p {
+	margin: 32px 0;
+}
+#content input[type="submit"] {
+	font-weight: bold;
+}
+input,
+select,
+button {
+	box-shadow: rgb(212, 212, 212) 0px 3px 3px;
+}
+input,
+select {
+	border: 2px solid black;
+	border-radius: 8px;
+	height: 32px;
+	padding: 0 8px;
+}
+input[type="text"] {
+	width: 240px;
+}
+input[type="submit"] {
+	background-color: black;
+	color: white;
+}
+button {
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+	border-radius: 8px;
+
+	height: 32px;
+}
+
+/* *************************** Login/Register Page ************************** */
+#login-register-inputs {
+	margin-bottom: 40px;
+}
+#login-register-inputs div {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	margin: 12px 0;
+}
+#login-register-inputs label {
+	text-align: left;
+	width: 100%;
+	font-weight: bold;
+}
+form[action="/login"] button,
+form[action="/register"] button {
+	width: 100%;
+}
+
+/* ******************************* Index Page ******************************* */
+
+#home-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+#home-buttons input {
+	height: 32px;
+	min-width: 156px;
+}
+
+#register-button {
+	background-color: white;
+	color: black;
+}
+
+/* ****************************** Results Page ****************************** */
+
+#results-content {
+	margin-top: 80px;
+}
+
+/* *********************************** Nav ********************************** */
+
+nav {
+	align-items: center;
+	background-color: white;
+	box-sizing: border-box;
+	display: flex;
+	min-height: 88px;
+	height: fit-content;
+	justify-content: space-between;
+	padding: 4px 40px;
+	width: 100%;
+}
+nav h1 a {
+	color: black;
+	text-decoration: none;
+}
+nav ul {
+	display: flex;
+}
+nav li {
+	list-style-type: none;
+	padding-left: 24px;
+	align-self: baseline;
+}
+nav form {
+	margin: 0;
+}
+nav h1 {
+	font-size: 1.8em;
+}
+nav p,
+nav a {
+	color: #777;
+}
+
+/* ********************************** Table ********************************* */
+
+table {
+	width: 700px;
+	table-layout: auto;
+	margin: 50px auto;
+}
+.category {
+	padding: 12px;
+}
+table,
+th,
+td {
+	border-collapse: collapse;
+	border: 1px solid rgb(173, 173, 173);
+	box-sizing: border-box;
+	justify-self: center;
+	/* text-align: center; */
+}
+th#description-header {
+	color: white;
+	background-color: black;
+}
+tr {
+	width: auto;
+}
+td {
+	padding: 4px 10px;
+}

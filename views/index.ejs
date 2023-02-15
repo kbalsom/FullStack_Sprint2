@@ -1,0 +1,19 @@
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body>
+		<%- include('./partials/nav.ejs') %>
+		<div id="content">
+			<h1>Welcome to MoviesDB</h1>
+
+			<div id="home-buttons">
+				<form action="/login">
+					<input type="submit" value="Login" />
+				</form>
+				<form action="/register">
+					<input id="register-button" type="submit" value="Sign Up" />
+				</form>
+			</div>
+		</div>
+	</body>
+	<%- include('./partials/foot.ejs') %>
+</html>
